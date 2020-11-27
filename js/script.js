@@ -17,6 +17,12 @@ form.addEventListener('submit', function(e){
 		document.getElementById("fullname").innerHTML = `
 			<div>Full Name: ${data.name}</div>
 		`;
+		document.getElementById("repos").innerHTML = `
+			<div>Repositories: ${data.public_repos}</div>
+		`;
+		document.getElementById("account-created").innerHTML = `
+			<div>Account created on: ${data.created_at}</div>
+		`;
 		document.getElementById("result").innerHTML = `
 			<a target="_blank" href="https://www.github.com/${search}">	<img alt="no user exist!!" src="${data.avatar_url}"/> </a>
 		`;
